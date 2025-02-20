@@ -70,3 +70,16 @@ Develop an automated system that will:
 3. Development kickoff
 4. Initial testing phase
 5. Pilot program
+
+### Ideas from Meeting w/ Brady
+
+- **Tour Guide Classification System**: Implement a tiered classification (experienced/regular/new) to optimize assignments for evaluations and co-tours.
+- **Visitor Interface**: Develop a streamlined user interface for quickly entering and updating visitor counts.
+- **Comprehensive Coverage Management**:
+  - Track individual guide metrics including completed tours, missed assignments, and excused absences
+  - Integrate with office worker check-in system to verify tour completion and automatically update guide statistics
+  - Design an intuitive dashboard for office workers to log guide status (checked in, completed tour, absent)
+- **Automated Communication Tools**:
+  - Create system for automatically sending tour details to assigned guides (visitor counts, special accommodations, check-in location)
+  - Develop streamlined excuse submission and processing workflow, with automatic removal from assignment pool and attendance tracking.
+  
