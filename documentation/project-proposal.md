@@ -80,6 +80,11 @@ Develop an automated system that will:
   - Integrate with office worker check-in system to verify tour completion and automatically update guide statistics
   - Design an intuitive dashboard for office workers to log guide status (checked in, completed tour, absent)
 - **Automated Communication Tools**:
-  - Create system for automatically sending tour details to assigned guides (visitor counts, special accommodations, check-in location)
+  - Create system for automatically sending tour details to assigned guides (visitor counts, special accommodations, check-in location, who will break apart families...)
+    - *Assigned Tour Guides: [TG-tag] [TG-tag] ...*
+    - *Tour Time: [hour] [date]*
+    - *Check-in will be from [location]*
+    - *There are [visitor-amount] families registered.*
+    - *[TG-tag] will break up the families!*
   - Develop streamlined excuse submission and processing workflow, with automatic removal from assignment pool and attendance tracking.
   
