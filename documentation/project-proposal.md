@@ -73,7 +73,7 @@ Develop an automated system that will:
 
 ### Ideas from Meeting w/ Brady
 
-- **Tour Guide Classification System**: Implement a tiered classification (experienced/regular/new) to optimize assignments for evaluations and co-tours.
+- **Tour Guide Classification System**: Implement a tiered classification (experienced/regular/new) based on amount of tours given to optimize assignments for evaluations and co-tours.
 - **Visitor Interface**: Develop a streamlined user interface for quickly entering and updating visitor counts.
 - **Comprehensive Coverage Management**:
   - Track individual guide metrics including completed tours, missed assignments, and excused absences
@@ -89,3 +89,20 @@ Develop an automated system that will:
     - *[TG-tag] will break up the families!*
   - Develop streamlined excuse submission and processing workflow, with automatic removal from assignment pool and attendance tracking.
   
+  ### Ideas from Meeting w/ Camille for Specialty Tours
+
+  - Create a counter variable for the amount of requirements a tour guide must complete and actively update it with each specialty tour they successfully complete.
+    - Make it fair by not making a single tour guide go on more specialty tours than another tour guide for example, specialty tours are hard.
+  - Try to have steps, at first try to assign one tour guide per 5 families, if that isn't enough do 10, then 20.
+  - Implement a visual progress tracker showing each guide's completion status toward specialty tour requirements
+  - Include a breakdown of different specialty tour types completed (e.g., Saturday tours, group tours, open house tours)
+  - Add a forecasting tool to identify which guides need more specialty tour opportunities to meet requirements
+  - Balanced Assignment Algorithm:
+    - Create a weighted assignment system that considers:
+      - Current specialty tour count per guide
+      - Time since last specialty tour assignment
+      - Guide availability and schedule load
+  - Tour detail messages communicated in Slack will be same as regular tour messages.
+  - Add specialized feedback forms for specialty tour participants
+    - Incorporate feedback scores into guide specialty tour qualification metrics
+    - Create improvement path for guides with lower specialty tour performance ratings
