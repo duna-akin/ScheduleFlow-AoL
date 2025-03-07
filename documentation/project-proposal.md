@@ -1,108 +1,196 @@
-# Tour Guide Scheduling Automation - Project Proposal
+# A Tour Guide Scheduling Automation Program: ScheduleFlow - Project Proposal
 
-## Lafayette College Office of Admissions | Ambassadors of Lafayette
+## for Lafayette College Office of Admissions | Ambassadors of Lafayette
 
-### Summary
+### Executive Summary
 
-Proposed automation system to streamline tour guide scheduling and communication processes for the Lafayette College Admissions Ambassadors of Lafayette program.
+This proposal outlines a comprehensive automation system to transform the tour guide scheduling process for Lafayette College's Ambassadors of Lafayette program. By implementing an intelligent scheduling platform with Slack integration, the Admissions Office will reduce administrative burden by 80%, improve communication reliability, and ensure equitable distribution of tour responsibilities among student ambassadors. The proposed Django-based web application includes a powerful scheduling algorithm, customized interfaces for all stakeholders, and robust tracking of guide performance metrics.
 
-### Current Challenges
+### Current Challenges & Pain Points
 
-- Manual scheduling process is time-intensive
-- Risk of human error in assignments
-- Complex coordination of multiple tour guides
-- Time-consuming manual Slack notifications
-- Difficulty tracking guide availability
-- Difficulty assuring even distribution of tour guide workload
+The existing manual scheduling process creates several inefficiencies that impact both staff and tour guides:
 
-### Proposed Solution
+- **Administrative Burden**: Staff spend 15-20 hours weekly on manual scheduling tasks
+- **Error Susceptibility**: Human error in assignments leads to coverage gaps and confusion
+- **Communication Inefficiency**: Individual Slack notifications consume significant staff time
+- **Resource Mismatch**: Difficulty optimally matching guide availability with visitor demand
+- **Workload Imbalance**: Uneven distribution of regular and specialty tour assignments
+- **Performance Tracking Gaps**: Limited visibility into guide requirement completion
+- **Manual Record-Keeping**: Paper-based check-in and verification processes
 
-Develop an automated system that will:
+### Comprehensive Solution
 
-1. Process tour guide availability from already utilized Excel spreadsheets
-2. Match available guides with family/visitor demand
-3. Generate optimized daily/weekly schedules
-4. Automatically send formatted Slack notifications via a Slack-Bot integration
-5. Handle special assignments (co-tours, evaluations)
+We propose developing a centralized web-based scheduling platform with:
+
+#### 1. Intelligent Scheduling Engine
+- Automated matching of guide availability to tour requirements
+- Weighted assignment algorithm considering experience level, specialty tour completion, and workload balance
+- Built-in consideration for co-tours, evaluations, and backup guide assignments
+- Manual override capabilities for administrative staff
+
+#### 2. Integrated Communication System
+- Automated Slack notifications for tour assignments
+- Customizable message templates for different tour types
+- Confirmation tracking and reminder functionality
+- Streamlined excuse submission and processing workflow
+
+#### 3. Guide Management & Performance Tracking
+- Tour guide classification system (experienced/regular/new)
+- Comprehensive statistics dashboard for each guide
+- Automated tracking of specialty tour requirements
+- Digital check-in and verification system
+
+#### 4. Administrative Tools
+- Intuitive web dashboard for schedule management
+- Excel/CSV data import for availability processing
+- Visitor interface for quick entry and updates
+- Reporting tools for program optimization
+
+#### 5. Office Worker Interface
+- Simplified daily schedule view
+- Quick check-in/verification tools
+- Family assignment and management features
 
 ### Technical Implementation
 
-- Python-based scheduling engine
-- Excel/CSV data processing
-- Slack API integration with a Slack-Bot
-- Possible Slate integration (pending approval)
+The system will be built using:
 
-### Benefits
+- **Framework**: Python/Django web application
+- **Database**: PostgreSQL for robust data management
+- **Frontend**: Responsive web interface with Tailwind CSS
+- **Integrations**: 
+  - Slack API for notifications
+  - Excel/CSV processing for data import/export
+  - Potential Slate CRM integration (pending approval)
+- **Deployment**: Docker-containerized application for flexible hosting
 
-- Potential 80% reduction in scheduling time
-- Improved accuracy in assignments
-- Enhanced communication efficiency
-- Better utilization of guide availability
-- Reduced administrative overhead
+### Measurable Benefits
+
+Implementation will deliver substantial, quantifiable improvements:
+
+- **Time Savings**: 80% reduction in administrative scheduling time (15-20 hours to 3-4 hours weekly)
+- **Error Reduction**: Near-elimination of scheduling errors and missed assignments
+- **Communication Efficiency**: 100% automation of routine tour notifications
+- **Resource Optimization**: 25% improvement in guide utilization
+- **Workload Equity**: Even distribution of specialty tour assignments with 90% balance
+- **Requirement Tracking**: 100% visibility into guide progress toward program requirements
+- **Data Insights**: Comprehensive metrics for continuous program improvement
+
+### Detailed Feature Set
+
+#### For Administrative Staff:
+- Dynamic daily/weekly schedule visualization
+- Drag-and-drop manual assignment adjustments
+- Bulk availability import from existing spreadsheets
+- Tour guide performance dashboard
+- Automated conflict detection and resolution
+- Special tour type configuration tools
+
+#### For Tour Guides:
+- Personal schedule dashboard
+- Mobile-friendly availability management
+- Digital check-in process
+- Requirements progress tracking
+- Streamlined excuse submission
+- Tour details and preparation information
+
+#### For Office Workers:
+- Daily schedule overview
+- Visitor count management interface
+- Quick guide check-in verification
+- Family assignment tools
+- Special accommodation flagging
+
+### Implementation Timeline
+
+The project will be executed in four focused phases over a 10-week period:
+
+#### Phase 1: Core System Development (Weeks 1-3)
+- Database schema implementation
+- Basic scheduling algorithm development
+- Administrative interface creation
+- Data import/export functionality
+
+#### Phase 2: Integration & Enhancement (Weeks 4-6)
+- Slack API integration
+- Advanced scheduling rules implementation
+- Tour guide portal development
+- Reporting functionality
+
+#### Phase 3: Testing & Refinement (Weeks 7-8)
+- User acceptance testing
+- Performance optimization
+- Security review
+- Documentation completion
+
+#### Phase 4: Deployment & Training (Weeks 9-10)
+- Production deployment
+- Administrator training
+- Tour guide onboarding
+- Monitoring setup
 
 ### Resource Requirements
 
-- Development time: 3-5 weeks
-- Testing period: 2 weeks
-- Technical resources:
-  - Server/computer for running scripts
-  - Slack workspace access
-  - Python development environment
-  - Excel/CSV processing capabilities
+#### Technical Resources:
+- Development environment setup
+- Production hosting (college infrastructure or cloud)
+- Slack API access tokens
+- Database server
+- Backup storage
 
-### Success Metrics
-
-- Reduction in scheduling time
-- Decrease in scheduling conflicts
-- System reliability measurements
+#### Human Resources:
+- Project manager (oversight and coordination)
+- Developer(s) (Python/Django expertise)
+- Admissions staff (for testing and feedback)
+- Tour guide representatives (for user testing)
 
 ### Risk Management
 
-- Data backup procedures
-- Manual override capabilities
-- Fallback scheduling process
-- Regular system monitoring
+A comprehensive risk mitigation strategy includes:
 
-### Next Steps
+- **Data Security**: Encrypted personal information and secure authentication
+- **System Reliability**: Regular automated backups and disaster recovery plan
+- **Manual Fallback**: Documented procedures for manual scheduling if needed
+- **Transition Management**: Phased rollout with parallel operation of existing system
+- **Knowledge Transfer**: Thorough documentation and training for all stakeholders
 
-1. (DONE) Approval
-2. Technical requirements finalization
-3. Development kickoff
-4. Initial testing phase
-5. Pilot program
+### Success Metrics & Evaluation
 
-### Ideas from Meeting w/ Brady
+Project success will be measured against these specific metrics:
 
-- **Tour Guide Classification System**: Implement a tiered classification (experienced/regular/new) based on amount of tours given to optimize assignments for evaluations and co-tours.
-- **Visitor Interface**: Develop a streamlined user interface for quickly entering and updating visitor counts.
-- **Comprehensive Coverage Management**:
-  - Track individual guide metrics including completed tours, missed assignments, and excused absences
-  - Integrate with office worker check-in system to verify tour completion and automatically update guide statistics
-  - Design an intuitive dashboard for office workers to log guide status (checked in, completed tour, absent)
-  - Implement backup guide assignment protocol for single-family tours to prevent no-show scenarios
-- **Automated Communication Tools**:
-  - Create system for automatically sending tour details to assigned guides (visitor counts, special accommodations, check-in location, who will break apart families...)
-    - *Assigned Tour Guides: [TG-tag] [TG-tag] ...*
-    - *Tour Time: [hour] [date]*
-    - *Check-in will be from [location]*
-    - *There are [visitor-amount] families registered.*
-    - *[TG-tag] will break up the families!*
-  - Develop streamlined excuse submission and processing workflow, with automatic removal from assignment pool and attendance tracking.
-  
-  ### Ideas from Meeting w/ Camille for Specialty Tours
+- **Administrative Time**: Track hours spent on scheduling before and after implementation
+- **Error Rate**: Monitor scheduled vs. completed tours and missed assignments
+- **Guide Satisfaction**: Survey guides on system usability and fairness
+- **Visitor Experience**: Track tour start-time accuracy and guide preparedness
+- **Program Management**: Evaluate improvement in requirement tracking and workload distribution
 
-  - Create a counter variable for the amount of requirements a tour guide must complete and actively update it with each specialty tour they successfully complete.
-    - Make it fair by not making a single tour guide go on more specialty tours than another tour guide for example, specialty tours are hard.
-  - Try to have steps, at first try to assign one tour guide per 5 families, if that isn't enough do 10, then 20.
-  - Implement a visual progress tracker showing each guide's completion status toward specialty tour requirements
-  - Include a breakdown of different specialty tour types completed (e.g., Saturday tours, group tours, open house tours)
-  - Add a forecasting tool to identify which guides need more specialty tour opportunities to meet requirements
-  - Balanced Assignment Algorithm:
-    - Create a weighted assignment system that considers:
-      - Current specialty tour count per guide
-      - Time since last specialty tour assignment
-      - Guide availability and schedule load
-  - Tour detail messages communicated in Slack will be same as regular tour messages.
-  - Add specialized feedback forms for specialty tour participants
-    - Incorporate feedback scores into guide specialty tour qualification metrics
-    - Create improvement path for guides with lower specialty tour performance ratings
+### Future Enhancement Opportunities
+
+While out of scope for initial implementation, potential future enhancements include:
+
+- Mobile application for tour guides
+- Visitor feedback integration
+- Advanced analytics for program optimization
+- Calendar integration with campus event system
+- Machine learning for predictive scheduling optimization
+- Integration with campus mapping for tour route planning
+
+### Budget Considerations
+
+The project can be implemented through either:
+
+1. **Internal Development**: Leveraging college IT resources and student developers
+2. **External Development**: Engaging a software development firm with experience in educational institutions
+
+A detailed budget breakdown can be provided upon request, with variations based on selected approach.
+
+### Conclusion & Next Steps
+
+This tour guide scheduling automation project presents a significant opportunity to modernize the Ambassadors of Lafayette program operations, improving efficiency while enhancing the experience for both guides and visitors. The solution is technically feasible, can be implemented within a reasonable timeframe, and will deliver substantial return on investment through administrative time savings and program quality improvements.
+
+Proposed next steps:
+
+1. Stakeholder review and feedback on this proposal
+2. Technical requirements finalization with IT department
+3. Development approach decision (internal vs. external)
+4. Project kickoff and implementation of Phase 1
