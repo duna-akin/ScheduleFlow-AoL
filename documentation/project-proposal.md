@@ -10,46 +10,50 @@ This proposal outlines a comprehensive automation system to transform the tour g
 
 The existing manual scheduling process creates several inefficiencies that impact both staff and tour guides:
 
-- **Administrative Burden**: Staff spend 15-20 hours weekly on manual scheduling tasks
+- **Administrative Burden**: Staff spend 10-15 hours weekly on manual scheduling tasks
 - **Error Susceptibility**: Human error in assignments leads to coverage gaps and confusion
 - **Communication Inefficiency**: Individual Slack notifications consume significant staff time
 - **Resource Mismatch**: Difficulty optimally matching guide availability with visitor demand
 - **Workload Imbalance**: Uneven distribution of regular and specialty tour assignments
-- **Performance Tracking Gaps**: Limited visibility into guide requirement completion
-- **Manual Record-Keeping**: Paper-based check-in and verification processes
+- **Performance Tracking Gaps**: Limited and inefficient visibility into guide requirement completion
+- **Manual Record-Keeping**: Excel-based check-in and verification processes
 
 ### Comprehensive Solution
 
 We propose developing a centralized web-based scheduling platform with:
 
 #### 1. Intelligent Scheduling Engine
+
 - Automated matching of guide availability to tour requirements
 - Weighted assignment algorithm considering experience level, specialty tour completion, and workload balance
-- Built-in consideration for co-tours, evaluations, and backup guide assignments
+- Built-in consideration for co-tours, evaluations, and special tours
 - Manual override capabilities for administrative staff
 
 #### 2. Integrated Communication System
-- Automated Slack notifications for tour assignments
+
+- Automated Slack notifications for tour assignments via a SlackBot API
 - Customizable message templates for different tour types
 - Confirmation tracking and reminder functionality
 - Streamlined excuse submission and processing workflow
 
 #### 3. Guide Management & Performance Tracking
+
 - Tour guide classification system (experienced/regular/new)
 - Comprehensive statistics dashboard for each guide
 - Automated tracking of specialty tour requirements
 - Digital check-in and verification system
+- Feedback report by visitors for tour guides (TBD)
 
 #### 4. Administrative Tools
+
 - Intuitive web dashboard for schedule management
 - Excel/CSV data import for availability processing
-- Visitor interface for quick entry and updates
 - Reporting tools for program optimization
 
 #### 5. Office Worker Interface
+
 - Simplified daily schedule view
 - Quick check-in/verification tools
-- Family assignment and management features
 
 ### Technical Implementation
 
@@ -58,27 +62,28 @@ The system will be built using:
 - **Framework**: Python/Django web application
 - **Database**: PostgreSQL for robust data management
 - **Frontend**: Responsive web interface with Tailwind CSS
-- **Integrations**: 
+- **Integrations**
   - Slack API for notifications
   - Excel/CSV processing for data import/export
-  - Potential Slate CRM integration (pending approval)
+  - ~~Potential Slate CRM integration (Unapproved)~~
 - **Deployment**: Docker-containerized application for flexible hosting
 
 ### Measurable Benefits
 
 Implementation will deliver substantial, quantifiable improvements:
 
-- **Time Savings**: 80% reduction in administrative scheduling time (15-20 hours to 3-4 hours weekly)
+- **Time Savings**: Expected 80% reduction in administrative scheduling time (10-15 hours to 3-4 hours weekly)
 - **Error Reduction**: Near-elimination of scheduling errors and missed assignments
 - **Communication Efficiency**: 100% automation of routine tour notifications
-- **Resource Optimization**: 25% improvement in guide utilization
+- **Resource Optimization**: Improvement in guide utilization
 - **Workload Equity**: Even distribution of specialty tour assignments with 90% balance
-- **Requirement Tracking**: 100% visibility into guide progress toward program requirements
+- **Requirement Tracking**: 100% visibility into guide progress toward program requirements and experience
 - **Data Insights**: Comprehensive metrics for continuous program improvement
 
 ### Detailed Feature Set
 
-#### For Administrative Staff:
+#### For Administrative Staff
+
 - Dynamic daily/weekly schedule visualization
 - Drag-and-drop manual assignment adjustments
 - Bulk availability import from existing spreadsheets
@@ -86,7 +91,8 @@ Implementation will deliver substantial, quantifiable improvements:
 - Automated conflict detection and resolution
 - Special tour type configuration tools
 
-#### For Tour Guides:
+#### For Tour Guides
+
 - Personal schedule dashboard
 - Mobile-friendly availability management
 - Digital check-in process
@@ -94,36 +100,40 @@ Implementation will deliver substantial, quantifiable improvements:
 - Streamlined excuse submission
 - Tour details and preparation information
 
-#### For Office Workers:
+#### For Office Workers
+
 - Daily schedule overview
 - Visitor count management interface
 - Quick guide check-in verification
-- Family assignment tools
-- Special accommodation flagging
+- Special accommodation flagging (TBD)
 
 ### Implementation Timeline
 
 The project will be executed in four focused phases over a 10-week period:
 
 #### Phase 1: Core System Development (Weeks 1-3)
+
 - Database schema implementation
 - Basic scheduling algorithm development
 - Administrative interface creation
 - Data import/export functionality
 
 #### Phase 2: Integration & Enhancement (Weeks 4-6)
+
 - Slack API integration
 - Advanced scheduling rules implementation
 - Tour guide portal development
 - Reporting functionality
 
 #### Phase 3: Testing & Refinement (Weeks 7-8)
+
 - User acceptance testing
 - Performance optimization
 - Security review
 - Documentation completion
 
 #### Phase 4: Deployment & Training (Weeks 9-10)
+
 - Production deployment
 - Administrator training
 - Tour guide onboarding
@@ -131,14 +141,16 @@ The project will be executed in four focused phases over a 10-week period:
 
 ### Resource Requirements
 
-#### Technical Resources:
+#### Technical Resources
+
 - Development environment setup
 - Production hosting (college infrastructure or cloud)
 - Slack API access tokens
 - Database server
 - Backup storage
 
-#### Human Resources:
+#### Human Resources
+
 - Project manager (oversight and coordination)
 - Developer(s) (Python/Django expertise)
 - Admissions staff (for testing and feedback)
@@ -177,12 +189,7 @@ While out of scope for initial implementation, potential future enhancements inc
 
 ### Budget Considerations
 
-The project can be implemented through either:
-
-1. **Internal Development**: Leveraging college IT resources and student developers
-2. **External Development**: Engaging a software development firm with experience in educational institutions
-
-A detailed budget breakdown can be provided upon request, with variations based on selected approach.
+This project is designed to be highly cost-effective, leveraging existing infrastructure and open-source technologies to minimize expenses. The primary budget requirement is for development time, as I will be the sole developer handling all aspects of the system—from backend logic to frontend design and integration While no significant hardware or third-party software costs are anticipated, compensation for development time will ensure the project is completed efficiently and meets the highest quality standards. A detailed breakdown of estimated development hours and a fair compensation structure can be provided upon request.
 
 ### Conclusion & Next Steps
 
@@ -190,7 +197,7 @@ This tour guide scheduling automation project presents a significant opportunity
 
 Proposed next steps:
 
-1. Stakeholder review and feedback on this proposal
+1. Stakeholder review and feedback on this proposal (iteration)
 2. Technical requirements finalization with IT department
-3. Development approach decision (internal vs. external)
+3. Development approach decision
 4. Project kickoff and implementation of Phase 1
